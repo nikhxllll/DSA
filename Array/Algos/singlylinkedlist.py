@@ -41,6 +41,7 @@ class Sll:
             pass
         else:
             self.start = self.start.next
+            
     def delete_last(self):
         if self.start is None:
             pass
