@@ -50,6 +50,7 @@ class Cll:
         if temp == self.last:
             print(temp.item)
     def delete_first(self):
+        
         if self.is_empty():
             pass
         elif self.last.next == self.last:
