@@ -29,6 +29,7 @@ class Deque:
             return self.items[-1]
     def size(self):
         return len(self.items)
+    
 # driver code
 d1 = Deque()
 d1.insert_front(10)
