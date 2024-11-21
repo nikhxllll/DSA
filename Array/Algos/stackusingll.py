@@ -26,6 +26,7 @@ class Stack:
         else:
             raise IndexError("Stack is empty")
     def size(self):
+    
         return self.item_count
     
 # driver code
