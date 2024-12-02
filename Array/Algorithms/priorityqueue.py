@@ -6,4 +6,4 @@ class Priority:
         return self.item_count == 0
     def push(self,data,priority):
         index = 0
-        while index < len(self.items) and             
+        while index < len(self.items)            
