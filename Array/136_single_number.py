@@ -4,3 +4,6 @@ class Solution:
         for num in nums:
             res = num ^ res
         return res
+    
+
+# XOR used in this
