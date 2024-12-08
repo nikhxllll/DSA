@@ -11,4 +11,4 @@ class Solution:
 
             if i == 0:
                 return [1] + digits
-
+# math 
