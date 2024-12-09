@@ -9,3 +9,6 @@ class Solution:
                 seen.remove(n)
 
         return nums3
+    
+
+    # used hashset in this
