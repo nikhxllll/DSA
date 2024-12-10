@@ -9,3 +9,5 @@ class Solution:
 
 
 #  hashset is used
+
+# easy
