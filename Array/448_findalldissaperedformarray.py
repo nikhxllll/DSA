@@ -6,3 +6,6 @@ class Solution:
             if i not in set_nums:
                 res.append(i)
         return res
+
+
+#  hashset is used
