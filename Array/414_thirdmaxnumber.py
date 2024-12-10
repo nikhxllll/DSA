@@ -7,3 +7,4 @@ class Solution:
         else:
             return sortednums[0]
 
+#  HHash set is used
