@@ -12,4 +12,4 @@ class Solution:
 
         return maxx
     
-    
+    # normal array is used two variables is used 
