@@ -19,3 +19,4 @@ class Solution:
         return res                
     
 # hashtable is used
+# it is the easy sum
