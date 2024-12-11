@@ -18,4 +18,4 @@ class Solution:
             res.append(hash[score[i]])
         return res                
     
-    
+# hashtable is used
