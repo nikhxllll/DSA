@@ -18,7 +18,7 @@ class NumArray:
         
         return rightSum - leftSum
 
-# Prefix sum is used
 
+# Prefix sum is used
 
 
