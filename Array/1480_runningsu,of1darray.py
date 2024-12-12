@@ -14,3 +14,4 @@ class Solution:
 
 # prefix sum
 # exactly same as the prefix sum algorithm
+# the only sum i did it my self
