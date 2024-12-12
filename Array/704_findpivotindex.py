@@ -10,4 +10,4 @@ class Solution:
 
         return -1
     
-    
+#  Prefix sum is used
