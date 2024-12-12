@@ -12,3 +12,5 @@ class Solution:
                 prefix.append(nums[i])
         return prefix
 
+# prefix sum
+# exactly same as the prefix sum algorithm
