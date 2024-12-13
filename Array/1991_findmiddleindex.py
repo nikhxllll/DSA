@@ -9,3 +9,5 @@ class Solution:
             leftsum += nums[i]
 
         return -1
+    
+    # prefix sum
