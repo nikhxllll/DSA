@@ -10,4 +10,5 @@ class Solution:
 
         return -1
     
+    # same as pivot index problem
     # prefix sum
