@@ -12,4 +12,6 @@ class Solution:
             l += 1
             r -=1
 
+
+
 # two pointer is used
