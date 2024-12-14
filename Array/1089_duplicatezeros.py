@@ -12,3 +12,5 @@ class Solution:
             else:
                 l +=1
             
+
+# one variable is used
