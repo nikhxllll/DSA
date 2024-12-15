@@ -8,7 +8,7 @@ l = [10,50,20,30,40]
 bubblesort(l)
 print(l)
 
-
+# modified algo is below
 
 
 # Modified bubble sort
