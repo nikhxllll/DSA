@@ -13,9 +13,9 @@ def prefix(nums):
 
 
 l = [10,20,30,40,50]
+s = [1219,1232,424124,24124,]
+prefix(s)
 
-prefix(l)
 
 
-
-print(l)
+print(s)
