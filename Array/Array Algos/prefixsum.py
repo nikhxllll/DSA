@@ -1,3 +1,5 @@
+# Prefix sum algo done by me
+
 def prefix(nums):
     p = []
 
