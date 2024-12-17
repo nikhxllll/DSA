@@ -50,7 +50,8 @@ class Sll:
             temp = self.start
             while temp.next.next is not None:
                 temp.next = None
-    def
+    def delete_after(self):
+        
             
 
 
