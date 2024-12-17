@@ -42,7 +42,16 @@ class Sll:
         else:
             self.start = self.start.next
     def delete_last(self):
-        
+        if self.start is None:
+            pass
+        elif self.start.next is None:
+            self.start = None
+        else:
+            temp = self.start
+            while temp.next.next is not None:
+                temp.next = None
+    def
+            
 
 
 my_list = Sll()
