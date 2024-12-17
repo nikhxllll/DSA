@@ -49,7 +49,8 @@ class Sll:
         else:
             temp = self.start
             while temp.next.next is not None:
-                temp.next = None
+                temp = temp.next
+            temp.next = None
     def delete_after(self,data):
         if self.start is None:
             pass
@@ -73,6 +74,9 @@ my_list.insert_at_start(20)
 my_list.insert_at_start(10)
 my_list.insert_at_start(30)
 my_list.insert_after(my_list.search(30),40)
+# my_list.delete_first()
+# my_list.delete_last()
+my_list.delete_after(10)
 
 
 my_list.print_list()
