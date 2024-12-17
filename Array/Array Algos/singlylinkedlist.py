@@ -36,8 +36,8 @@ class Sll:
         while temp is not None:
             print(temp.item)
             temp = temp.next
-    
-
+    def delete_first(self):
+        
 
 
 my_list = Sll()
