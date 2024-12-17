@@ -41,7 +41,8 @@ class Sll:
             pass
         else:
             self.start = self.start.next
-    def 
+    def delete_last(self):
+        
 
 
 my_list = Sll()
