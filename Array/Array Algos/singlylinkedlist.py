@@ -37,7 +37,11 @@ class Sll:
             print(temp.item)
             temp = temp.next
     def delete_first(self):
-        
+        if self.start == None:
+            pass
+        else:
+            self.start = self.start.next
+    def 
 
 
 my_list = Sll()
