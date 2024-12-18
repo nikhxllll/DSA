@@ -7,7 +7,7 @@ class Solution:
                 
                 # This is the optimized version
 
-
+# HASHSET IS USED
 class Solution:
     def twoSum(self, nums: List[int], target: int) -> List[int]:
         h = {}
