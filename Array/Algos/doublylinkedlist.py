@@ -8,6 +8,9 @@ class Dll:
         self.start = start
     def is_empty(self):
         return self.start == None
+    def insert_at_start(self,data):
+        n = Node(prev=None,data,self.start)
+        if self.start == None:
     
 
         
