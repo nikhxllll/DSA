@@ -40,7 +40,10 @@ class Dll:
                 temp.next.prev = n
             temp.next = n
     def print_list(self):
-       
+        temp = self.start
+        while temp is not None:
+            print(temp.item)
+            temp = temp.next
 
 
 
