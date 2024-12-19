@@ -15,7 +15,7 @@ class Dll:
         else:                  
             self.start = n
             self.start.prev = n
-    def insert_at_last(self,data,temp):
+    def insert_at_last(self,data):
         temp = self.start
         if not self.is_empty():
             while temp.next is not None:
@@ -28,7 +28,7 @@ class Dll:
             temp.next = n
     def search(self,data):
         temp = self.start
-        while temp.next is not None:
+        while temp is not None:
             if temp.item == data:
                 return temp
             temp = temp.next
@@ -44,7 +44,18 @@ class Dll:
         while temp is not None:
             print(temp.item)
             temp = temp.next
+    def delete_first(self):
+        
 
+
+mylist = Dll()
+
+mylist.insert_at_start(20)
+mylist.insert_at_start(10)
+mylist.insert_at_last(30)
+# mylist.search(30)
+mylist.insert_after(mylist.search(30),40)
+mylist.print_list()
 
 
     
