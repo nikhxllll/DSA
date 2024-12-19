@@ -59,6 +59,48 @@ class Dll:
             self.start = None
         elif self.start == None:
             pass   
+    def delete_item(self,data):
+        if self.start is None:
+            pass
+        if self.start.item == data:
+            self.start = self.start.next
+            if self.start is not None:
+                self.start.prev = None
+        else:
+            temp=self.start
+            while temp is not None:
+                if temp.item==data:
+                    if temp.next is not None:
+                        temp.next.prev=temp.prev
+                    if temp.prev is not None:
+                        temp.prev.next=temp.next
+                    break
+                temp=temp.next    
+    # def delete_item(self, data):
+    #     if self.start is None:  # Check if the list is empty
+    #         pass
+
+    # # Case 1: Deleting the first node
+    #     if self.start.item == data:
+    #         self.start = self.start.next
+    #         if self.start is not None:
+    #             self.start.prev = None
+
+    # # Case 2: Deleting a node somewhere in the middle or the last node
+    #     temp = self.start
+    #     while temp is not None:
+    #         if temp.item == data:  # Found the node to delete
+    #             if temp.next is not None:  # Node is not the last node
+    #                 temp.prev.next = temp.next  # Bypass the node
+    #                 temp.next.prev = temp.prev  # Update the previous node's link
+    #             else:  # Node is the last one
+    #                 temp.prev.next = None  # Update the second last node's next pointer
+    #             break  # Node deleted, exit the function
+    #         temp = temp.next  # Move to the next node
+
+    # # If we reach here, the item was not found in the list
+    #     print("Item not found in the list")
+
 
 
 
@@ -69,6 +111,9 @@ mylist.insert_at_start(10)
 mylist.insert_at_last(30)
 # mylist.search(30)
 mylist.insert_after(mylist.search(30),40)
+# mylist.delete_first()
+# mylist.delete_last()
+mylist.delete_item(20)
 mylist.print_list()
 
 
