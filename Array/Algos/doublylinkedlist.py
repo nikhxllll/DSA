@@ -45,7 +45,11 @@ class Dll:
             print(temp.item)
             temp = temp.next
     def delete_first(self):
-        
+        if self.start is not None:
+            self.start = self.start.next
+            if self.start is not None:
+                self.start.prev = None
+     
 
 
 mylist = Dll()
