@@ -49,7 +49,8 @@ class Dll:
             self.start = self.start.next
             if self.start is not None:
                 self.start.prev = None
-     
+    def delete_last(self):
+         
 
 
 mylist = Dll()
