@@ -50,7 +50,16 @@ class Dll:
             if self.start is not None:
                 self.start.prev = None
     def delete_last(self):
-         
+        if self.start is not None:
+            temp = self.start 
+            while temp.next is not None:
+                temp = temp.next
+            temp.prev.next = None
+        elif self.start.next == None:
+            self.start = None
+        elif self.start == None:
+            pass   
+
 
 
 mylist = Dll()
