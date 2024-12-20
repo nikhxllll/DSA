@@ -56,7 +56,20 @@ class Cll:
             self.last = None
         else:
             self.last.next = self.last.next.next
-                 
+    def delete_last(self):
+        if self.is_empty():
+            pass
+        elif self.last.next == self.last:
+            self.last = None
+        else:
+            temp = self.last.next
+            while temp.next != self.last:
+                temp = temp.next
+            temp.next = self.last.next
+            self.last = temp
+    
+
+
     
 
 
