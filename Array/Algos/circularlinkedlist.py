@@ -67,7 +67,29 @@ class Cll:
                 temp = temp.next
             temp.next = self.last.next
             self.last = temp
-    
+    def delete_item(self,data):
+        if self.is_empty():
+            pass
+        elif self.last.next == self.last:
+            if self.last.item == data:
+                self.last = None
+        else:
+            if self.last.next.item == data:
+                self.delete_first()
+            else:
+                temp = self.last.next
+                while temp != self.last:
+                    if temp.next.item == data:
+                        self.delete_last()
+                        break
+
+                    if temp.next.item == data:
+                        temp.next = temp.next.next
+                        break
+                    temp = temp.next
+                # print("Data is not found")
+                
+
 
 
     
@@ -79,4 +101,7 @@ mylist.insert_at_start(5)
 mylist.insert_at_last(35)
 mylist.insert_after(mylist.search(15),25)
 # mylist.search(15)
+# mylist.delete_first()
+# mylist.delete_last()
+mylist.delete_item(35)
 mylist.print_list()
