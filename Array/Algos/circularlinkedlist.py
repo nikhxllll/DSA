@@ -25,6 +25,16 @@ class Cll:
             n.next = self.last.next
             self.last.next = n
             self.last = n
-    
+    def search(self,data):
+        if self.is_empty():
+            return None
+        temp = self.last
+        while temp != self.last:
+            if temp.item == data:
+                return temp
+            temp = temp.next
+        if temp.next == data:
+            return temp
+        return None
 
     
