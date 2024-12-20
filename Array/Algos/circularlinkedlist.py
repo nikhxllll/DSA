@@ -16,5 +16,15 @@ class Cll:
         else:
             n.next = self.last.next
             self.last.next = n
+    def insert_at_last(self,data):
+        n = Node(data)
+        if self.is_empty():
+            n.next = n
+            self.last = n
+        else:
+            n.next = self.last.next
+            self.last.next = n
+            self.last = n
     
+
     
