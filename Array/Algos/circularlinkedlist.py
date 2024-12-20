@@ -28,7 +28,7 @@ class Cll:
     def search(self,data):
         if self.is_empty():
             return None
-        temp = self.last
+        temp = self.last.next
         while temp != self.last:
             if temp.item == data:
                 return temp
@@ -42,6 +42,28 @@ class Cll:
             temp.next = n
             if temp == self.last:
                 self.last = n
+    def print_list(self):
+        temp = self.last.next
+        while temp != self.last:
+            print(temp.item,end =' ')
+            temp = temp.next
+        if temp == self.last:
+            print(temp.item)
+    def delete_first(self):
+        if self.is_empty():
+            pass
+        elif self.last.next == self.last:
+            self.last = None
+        else:
+            self.last.next = self.last.next.next
+                 
     
 
-    
+
+mylist = Cll()
+mylist.insert_at_start(15)
+mylist.insert_at_start(5)
+mylist.insert_at_last(35)
+mylist.insert_after(mylist.search(15),25)
+# mylist.search(15)
+mylist.print_list()
