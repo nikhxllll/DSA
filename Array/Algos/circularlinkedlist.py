@@ -6,4 +6,7 @@ class Cll:
     def __init__(self,last = None):
         self.last = last
 
-    def is
+    def is_empty(self):
+        return self.last == None
+    def insert_at_start()
+    
