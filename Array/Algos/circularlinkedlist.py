@@ -4,4 +4,6 @@ class Node:
         self.next = next
 class Cll:
     def __init__(self,last = None):
-        self.
+        self.last = last
+
+    def is
