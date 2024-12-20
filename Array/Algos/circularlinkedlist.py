@@ -8,5 +8,13 @@ class Cll:
 
     def is_empty(self):
         return self.last == None
-    def insert_at_start()
+    def insert_at_start(self,data):
+        n = Node(data)
+        if self.is_empty():
+            n.next = n
+            self.last = n
+        else:
+            n.next = self.last.next
+            self.last.next = n
+    
     
