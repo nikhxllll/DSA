@@ -17,3 +17,5 @@ class Solution:
             output += digit
             n = n//10
         return output
+    
+    # hashmap is used
