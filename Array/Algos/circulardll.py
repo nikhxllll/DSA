@@ -32,14 +32,28 @@ class Cdll:
             self.start = n
     def search(self,data):
         temp = self.start
+        if temp.item == data:
+            return temp
+        else:
+            temp = temp.next
         if not self.is_empty():
-            while temp.next == self.start:
+            while temp.next != self.start:
                 if temp.item == data:
                     return temp
                 temp = temp.next
+            return None
         else:
             return None
-    
+    def insert_after(self,temp,data):
+        if temp is not None:
+            if temp.next == self.start :
+                n = Node(temp,data,self.start)
+                if temp.item == data:
+                    self.insert_at_last()
+            elif self.start == data:
+
+
+
 
 
 
