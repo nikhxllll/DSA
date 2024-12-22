@@ -46,12 +46,11 @@ class Cdll:
             return None
     def insert_after(self,temp,data):
         if temp is not None:
-            if temp.next == self.start :
-                n = Node(temp,data,self.start)
-                if temp.item == data:
-                    self.insert_at_last()
-            elif self.start == data:
-
+            n = Node(None,data)
+            n.next = temp.next
+            n.prev = temp
+            temp.next.prev = n
+            temp.next = n
 
 
 
