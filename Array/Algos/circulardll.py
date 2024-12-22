@@ -20,11 +20,18 @@ class Cdll:
             n.prev = n
         self.start = n
     def insert_at_last(self,data):
+        n = Node(None,data)
         if not self.is_empty():
-            n = Node(None,data)
             n.prev = self.start.prev
             n.next = self.start
-            self.start.prev
+            self.start.prev.next = n
+            self.start.prev = n
+        else:
+            n.prev = n
+            n.next = n
+            self.start = n
+    
+
 
 # driver code
 mylist = Cdll()
