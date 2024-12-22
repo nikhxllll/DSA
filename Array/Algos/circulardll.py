@@ -32,18 +32,17 @@ class Cdll:
             self.start = n
     def search(self,data):
         temp = self.start
+        if temp == None:
+            return None
         if temp.item == data:
             return temp
         else:
             temp = temp.next
-        if not self.is_empty():
-            while temp.next != self.start:
-                if temp.item == data:
-                    return temp
-                temp = temp.next
-            return None
-        else:
-            return None
+        while temp != self.start:
+            if temp.item == data:
+                return temp
+            temp = temp.next
+        return None
     def insert_after(self,temp,data):
         if temp is not None:
             n = Node(None,data)
@@ -51,6 +50,18 @@ class Cdll:
             n.prev = temp
             temp.next.prev = n
             temp.next = n
+    def printlist(self):
+        temp = self.start
+        if temp is not None:
+            print(temp.item,end = ' ')
+            temp = temp.next
+            while temp != self.start:
+                print(temp.item,end = ' ')
+                temp = temp.next
+    def 
+            
+
+
 
 
 
@@ -61,3 +72,6 @@ class Cdll:
 mylist = Cdll()
 mylist.insert_at_start(15)
 mylist.insert_at_start(5)
+mylist.insert_after(mylist.search(15),25)
+
+mylist.printlist()
