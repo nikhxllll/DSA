@@ -30,7 +30,18 @@ class Cdll:
             n.prev = n
             n.next = n
             self.start = n
+    def search(self,data):
+        temp = self.start
+        if not self.is_empty():
+            while temp.next == self.start:
+                if temp.item == data:
+                    return temp
+                temp = temp.next
+        else:
+            return None
     
+
+
 
 
 # driver code
