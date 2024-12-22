@@ -58,7 +58,12 @@ class Cdll:
             while temp != self.start:
                 print(temp.item,end = ' ')
                 temp = temp.next
-    def 
+    def delete_first(self):
+        if self.start is not None:
+            if self.start.next == self.start:
+                self.start = None
+            else:
+                
             
 
 
