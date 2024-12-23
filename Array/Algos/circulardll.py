@@ -66,6 +66,12 @@ class Cdll:
                 self.start.prev.next = self.start.next
                 self.start.next.prev = self.start.prev
                 self.start = self.start.next
+    def delete_last(self):
+        if self.start is not None:
+            if self.start.next == self.start:
+                self.start = None
+            else:
+                
 
                 
             
