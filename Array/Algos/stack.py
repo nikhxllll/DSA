@@ -15,8 +15,15 @@ class Stack:
             return self.s[-1]
         else:
             raise IndexError('Stack is empty')
+    def size(self):
+        return len(self.s)
     
-              
-    
-    
+s1 = Stack()
+s1.push(10)
+s1.push(20)
+s1.push(30)
+print(s1.peek())
+print("Removed item",s1.pop())
+print(s1.peek())
+print(s1.size())    
         
