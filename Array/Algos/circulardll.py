@@ -71,7 +71,9 @@ class Cdll:
             if self.start.next == self.start:
                 self.start = None
             else:
-                
+                self.start.prev.prev.next = self.start
+                self.start.prev = self.start.prev.prev
+    def delete_item(self,data):
 
                 
             
