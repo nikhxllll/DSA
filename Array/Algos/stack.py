@@ -5,4 +5,12 @@ class Stack:
         return len(self.s)==0
     def push(self,data):
             self.s.append(data)
+    def pop(self):
+        if not self.is_empty():
+            return self.s.pop()
+        else:
+            raise IndexError('Stack is empty')
+    
+    
+    
         
