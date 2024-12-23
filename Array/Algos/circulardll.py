@@ -74,6 +74,18 @@ class Cdll:
                 self.start.prev.prev.next = self.start
                 self.start.prev = self.start.prev.prev
     def delete_item(self,data):
+        if self.start is not None:
+            temp = self.start
+            if temp.item == data:
+                self.delete_first()
+            else:
+                temp = temp.next
+                while temp != self.start:
+                    if temp.item == data:
+                        temp.next.prev = temp.prev
+                        temp.prev.next = temp.next
+                    temp = temp.next
+
 
                 
             
@@ -90,5 +102,7 @@ mylist = Cdll()
 mylist.insert_at_start(15)
 mylist.insert_at_start(5)
 mylist.insert_after(mylist.search(15),25)
-
+# mylist.delete_first()
+# mylist.delete_last()
+mylist.delete_item(15)
 mylist.printlist()
