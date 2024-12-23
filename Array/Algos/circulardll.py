@@ -63,6 +63,10 @@ class Cdll:
             if self.start.next == self.start:
                 self.start = None
             else:
+                self.start.prev.next = self.start.next
+                self.start.next.prev = self.start.prev
+                self.start = self.start.next
+
                 
             
 
