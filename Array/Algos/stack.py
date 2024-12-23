@@ -10,7 +10,13 @@ class Stack:
             return self.s.pop()
         else:
             raise IndexError('Stack is empty')
+    def peek(self):
+        if not self.is_empty():
+            return self.s[-1]
+        else:
+            raise IndexError('Stack is empty')
     
+              
     
     
         
