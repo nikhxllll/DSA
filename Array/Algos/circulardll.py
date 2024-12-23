@@ -87,15 +87,6 @@ class Cdll:
                     temp = temp.next
 
 
-                
-            
-
-
-
-
-
-
-
 
 # driver code
 mylist = Cdll()
