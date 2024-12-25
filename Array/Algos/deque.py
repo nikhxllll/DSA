@@ -29,4 +29,13 @@ class Deque:
             return self.items[-1]
     def size(self):
         return len(self.items)
-    
+# driver code
+d1 = Deque()
+d1.insert_front(10)
+d1.insert_front(20)
+d1.insert_front(30)
+d1.insert_rear(5)
+d1.delete_front()
+d1.delete_rear()
+print("Top elem:",d1.get_front())
+print("Bottom elem:",d1.get_rear())
