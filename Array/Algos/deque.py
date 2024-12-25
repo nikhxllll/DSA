@@ -6,4 +6,8 @@ class Deque:
         self.item_count = 0
 
     def is_empty(self):
+        return self.item_count == 0
+    def insert_front(self,data):
+        self.items.append(data)
+    def insert_rear(self,data):
         
