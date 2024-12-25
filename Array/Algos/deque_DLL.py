@@ -45,8 +45,8 @@ class Deque:
             self.rear = None
             self.front = None
         else:
-            self.rear.prev.next = None
-            
+            self.rear=self.rear.prev
+            self.rear.next = None  
         self.item_count -=1
     def get_front(self):
         return self.front.item
@@ -55,6 +55,17 @@ class Deque:
     def size(self):
         return self.item_count
 # Driver code
+d1 = Deque()
+d1.insert_front(30)
+d1.insert_front(20)
+d1.insert_front(10)
+d1.insert_rear(40)
+# d1.delete_front()
+# d1.delete_rear()
+print("TotalSize:",d1.size())
+print("Top elem:",d1.get_front())
+print("Bottom elem:",d1.get_rear())
+
     
 
 
