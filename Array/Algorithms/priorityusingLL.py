@@ -37,10 +37,9 @@ q.push("Ny",10)
 q.push("Jy",20)
 q.push("Sy",30)
 q.push("Ky",40)
-print("Before deletion :",q.size())
+
 while not q.is_empty():
     print(q.pop())
-print("After deletion",q.size())
     
         
             
