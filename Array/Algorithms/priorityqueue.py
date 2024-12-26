@@ -1,4 +1,4 @@
-class Priority:
+class PriorityyQueue:
     def __init__(self):
         self.items = []
         self.item_count = 0
@@ -16,3 +16,13 @@ class Priority:
             return self.items.pop(0)[0]   
     def size(self):
         return self.item_count()
+    # driver Code
+p=PriorityyQueue()
+p.push("Nikhil",10)
+p.push("Saif",20)
+p.push("Raja",30)
+p.push("Rahul",30)
+
+while not p.is_empty():
+    print(p.pop())
+
