@@ -22,15 +22,25 @@ class PriorityQueue:
     def is_empty(self):
         return self.item_count == 0
     def pop(self):
+        if self.is_empty():
+            raise IndexError("Queue is empty")
         data = self.start.item
-        if not self.is_empty():
-            self.start = self.start.next
-            return data
+        self.start = self.start.next
         self.item_count -=1
+        return data
     def size(self):
         return self.item_count
     
-# de
+# driver code
+q = PriorityQueue()
+q.push("Ny",10)
+q.push("Jy",20)
+q.push("Sy",30)
+q.push("Ky",40)
+print("Before deletion :",q.size())
+while not q.is_empty():
+    print(q.pop())
+print("After deletion",q.size())
     
         
             
