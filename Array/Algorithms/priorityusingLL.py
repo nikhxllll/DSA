@@ -26,6 +26,12 @@ class PriorityQueue:
         if not self.is_empty():
             self.start = self.start.next
             return data
+        self.item_count -=1
+    def size(self):
+        return self.item_count
+    
+# de
+    
         
             
 
