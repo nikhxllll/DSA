@@ -18,7 +18,16 @@ class PriorityQueue:
                 temp=temp.next
             n.next = temp.next
             temp.next = n
-    
+        self.item_count +=1
+    def is_empty(self):
+        return self.item_count == 0
+    def pop(self):
+        data = self.start.item
+        if not self.is_empty():
+            self.start = self.start.next
+            return data
+        
+            
 
         
 
