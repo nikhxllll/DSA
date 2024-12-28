@@ -8,12 +8,4 @@ class Bst:
         self.root = None
     def insert(self,data):
         n = Node(data)
-        if self.root == None:
-            self.root = n
-        else:
-            temp = self.root
-            if temp.item > n.item:
-                while temp.left!=None or temp.right != None:
-                    self.root.left =  n  
-            else:
-                self.root.right = n
+        
