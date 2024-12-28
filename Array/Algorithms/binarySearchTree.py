@@ -3,3 +3,7 @@ class Node:
         self.item=item
         self.left = left
         self.right = right
+class Bst:
+    def __init__(self,root = None):
+        self.root = root
+        
