@@ -29,5 +29,14 @@ class Bst:
         result = []
         self.rinorder(self.root,result)
         return result
-    
+    def rinorder(self,root,result):
+        if root:
+            self.rinorder(root.left,result)
+            result.append(root.item)
+            self.rinorder(root.right,result)
+    def preorder(self):
+        result = []
+        self.rpreorder(self.root,result)
+        return result
+    def rpreorder(self)
         
