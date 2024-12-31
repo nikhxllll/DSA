@@ -17,4 +17,6 @@ class Bst:
             root.right = self.rinsert(root.right,data)
         return root
     def search(self,data):
+        return self.rsearch(self.root,data)
+    def rsearch(self,root,data):
         
