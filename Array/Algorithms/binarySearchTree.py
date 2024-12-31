@@ -38,5 +38,9 @@ class Bst:
         result = []
         self.rpreorder(self.root,result)
         return result
-    def rpreorder(self)
+    def rpreorder(self,root,result):
+        if root:
+            result.append(root.item)
+            self.rpreorder(root.left,result)
+            self.rpreorder(root.right,result)
         
