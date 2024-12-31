@@ -43,4 +43,13 @@ class Bst:
             result.append(root.item)
             self.rpreorder(root.left,result)
             self.rpreorder(root.right,result)
-        
+    def postorder(self):
+        result = []
+        self.rpostorder(self.root,result)
+        return result
+    def rpostorder(self,root,result):
+        if root:
+            result.append(root.item)
+            self.rpostorder(root.left,result)
+            self.rpostorder(root.right,result)
+    
