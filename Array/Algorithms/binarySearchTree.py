@@ -19,4 +19,15 @@ class Bst:
     def search(self,data):
         return self.rsearch(self.root,data)
     def rsearch(self,root,data):
+        if root == None or root.item == data:
+            return root
+        if data < root.item:
+            return self.rsearch(root.left,data)
+        elif data > root.item:
+            return self.rsearch(root.right,data)
+    def in_order(self):
+        result = []
+        self.rinorder(self.root,result)
+        return result
+    
         
