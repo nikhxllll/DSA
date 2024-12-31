@@ -16,3 +16,5 @@ class Bst:
         elif data > root.item:
             root.right = self.rinsert(root.right,data)
         return root
+    def search(self,data):
+        
