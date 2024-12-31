@@ -49,7 +49,22 @@ class Bst:
         return result
     def rpostorder(self,root,result):
         if root:
-            result.append(root.item)
             self.rpostorder(root.left,result)
             self.rpostorder(root.right,result)
-    
+            result.append(root.item)
+
+# driver code
+bst = Bst()
+bst.insert(50)
+bst.insert(30)
+bst.insert(70)
+bst.insert(60)
+bst.insert(10)
+bst.insert(40)
+bst.insert(30)
+bst.insert(35)
+bst.insert(45)
+print(bst.search(45))
+print(bst.in_order())
+print(bst.preorder())
+print(bst.postorder())
