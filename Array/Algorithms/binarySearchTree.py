@@ -56,10 +56,7 @@ class Bst:
         while root.left is not None:
             root = root.left
         return root.item
-    def maximum(self,root):
-        while root.right is not None:
-            root = root.right
-        return root.item
+    
 
 
 # driver code
