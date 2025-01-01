@@ -77,7 +77,8 @@ class Bst:
             root.item = self.minimum(root.right)
             self.rdelete(root.right,root.item)
         return root
-    def size
+    def size(self):
+        return len(self.in_order())
 
 # driver code
 bst = Bst()
