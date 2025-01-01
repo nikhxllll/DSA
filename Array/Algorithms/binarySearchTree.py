@@ -52,6 +52,10 @@ class Bst:
             self.rpostorder(root.left,result)
             self.rpostorder(root.right,result)
             result.append(root.item)
+    def minimum(self,root):
+        return root.item
+    def rminimum(self,root):
+
 
 # driver code
 bst = Bst()
