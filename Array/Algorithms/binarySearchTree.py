@@ -60,7 +60,9 @@ class Bst:
         while root.right is not None:
             root = root.right
         return root.item
-
+    def delete(self,data):
+        self.root = self.rdelete(self.root,data)
+    def
 
 # driver code
 bst = Bst()
