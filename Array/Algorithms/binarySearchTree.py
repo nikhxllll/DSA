@@ -62,7 +62,22 @@ class Bst:
         return root.item
     def delete(self,data):
         self.root = self.rdelete(self.root,data)
-    def
+    def rdelete(self,root,data):
+        if root == None:
+            return None
+        if data < root.item:
+            root.left = self.rdelete(root.left,data)
+        elif data > root.item:
+            root.right = self.rdelete(root.right,data)
+        else:
+            if root.left == None:
+                return root.right
+            if root.right == None:
+                return root.left
+            root.item = self.minimum(root.right)
+            self.rdelete(root.right,root.item)
+        return root
+    def size
 
 # driver code
 bst = Bst()
