@@ -52,14 +52,16 @@ class Bst:
             self.rpostorder(root.left,result)
             self.rpostorder(root.right,result)
             result.append(root.item)
-    def minimum(self,root):
-        while root.left is not None:
-            root = root.left
-        return root.item
-    def maximum(self,root):
-        while root.right is not None:
-            root = root.right
-        return root.item
+    def minimum(self,temp):
+        current = temp
+        while current.left is not None:
+            current = current.left
+        return current.item
+    def maximum(self,temp):
+        current = temp
+        while current.right is not None:
+            current = current.right
+        return current.item
     def delete(self,data):
         self.root = self.rdelete(self.root,data)
     def rdelete(self,root,data):
@@ -91,7 +93,9 @@ bst.insert(40)
 bst.insert(30)
 bst.insert(35)
 bst.insert(45)
-print(bst.search(45))
 print(bst.in_order())
-print(bst.preorder())
-print(bst.postorder())
+# print(bst.preorder())
+# print(bst.postorder())
+bst.delete(45)
+bst.delete(10)
+print(bst.in_order())
