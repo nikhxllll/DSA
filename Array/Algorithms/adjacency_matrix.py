@@ -17,5 +17,6 @@ class Graph:
     def has_edge(self,u,v):
         if 0<=u<self.vertex_count and 0<=v<self.vertex_count:
             return self.adj_matrix[u][v] != 0
-    def         
+    def print_adj_matrix(self):
+             
 
