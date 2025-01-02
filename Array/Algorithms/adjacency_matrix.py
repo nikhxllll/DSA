@@ -8,3 +8,5 @@ class Graph:
             self.adj_matrix[v][u] = weight
         else:
             print("Invalid Vertices")
+    def remove_edge(self,u,v):
+        
