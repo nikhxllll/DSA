@@ -18,5 +18,6 @@ class Graph:
         if 0<=u<self.vertex_count and 0<=v<self.vertex_count:
             return self.adj_matrix[u][v] != 0
     def print_adj_matrix(self):
-             
+        for row_list in self.adj_matrix:
+            print(" ".join(map(str,row_list)))
 
