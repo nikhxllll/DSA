@@ -14,5 +14,7 @@ class Graph:
             self.adj_matrix[u][v] = 0
         else:
             print("Invalid vertices")
+    def has_edge(self,u,v):
+        if 
         
 
