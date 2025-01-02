@@ -9,4 +9,10 @@ class Graph:
         else:
             print("Invalid Vertices")
     def remove_edge(self,u,v):
+        if 0<=u<self.vertex_count and 0<=v<self.vertex_count:
+            self.adj_matrix[u][v] = 0
+            self.adj_matrix[u][v] = 0
+        else:
+            print("Invalid vertices")
         
+
