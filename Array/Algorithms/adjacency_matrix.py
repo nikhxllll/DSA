@@ -7,4 +7,4 @@ class Graph:
             self.adj_matrix[u][v] = weight
             self.adj_matrix[v][u] = weight
         else:
-            print("Invalid ")
+            print("Invalid Vertices")
