@@ -14,3 +14,10 @@ class Graph:
             self.vertex_count[v] = [(vertex,weight) for vertex,weight in self.adj_list[v] if vertex != u]
         else:
             print("Invaaliv vertex")
+    def has_edge(self,u,v):
+        if 0 <= u < self.vertex_count and 0 <= v < self.vertex_count:
+            return any(vertex == v for vertex,weight in self.adj_list[u])
+        else:
+            print("Invaaalid Vertex")
+            return False
+    
