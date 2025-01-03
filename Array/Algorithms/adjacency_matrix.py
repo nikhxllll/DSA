@@ -21,3 +21,14 @@ class Graph:
         for row_list in self.adj_matrix:
             print(" ".join(map(str,row_list)))
 
+#Driver Code
+g = Graph(5)
+g.add_edge(0,1)
+g.add_edge(1,2)
+g.add_edge(1,3)
+g.add_edge(2,3)
+g.add_edge(3,4)
+# g.print_adj_matrix()
+g.remove_edge(1,2)
+g.print_adj_matrix()
+
