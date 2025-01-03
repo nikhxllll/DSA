@@ -8,4 +8,5 @@ class Graph:
             self.adj_list[v].append((u,weight))
         else:
             print("Invalid Vertex")
-    
+    def remove_edge(self,u,v):
+        
