@@ -20,6 +20,7 @@ class Graph:
     def print_adj_matrix(self):
         for row_list in self.adj_matrix:
             print(" ".join(map(str,row_list)))
+            
 #Driver Code
 g = Graph(5)
 g.add_edge(0,1)
