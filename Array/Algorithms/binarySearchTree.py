@@ -81,6 +81,7 @@ class Bst:
         return root
     def size(self):
         return len(self.in_order())
+    
 # driver code
 bst = Bst()
 bst.insert(50)
