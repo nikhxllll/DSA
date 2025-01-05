@@ -6,8 +6,8 @@ class Dfs:
             self.items[u] = []
         if v not in self.items:
             self.items[v] = []
-        self.items[u].append[v]
-        self.items[v].append[u]
+        self.items[u].append(v)
+        self.items[v].append(u)
     def dfs(self,start):
         visited = set()
         stack = [start]
@@ -15,8 +15,14 @@ class Dfs:
             node = stack.pop()
             print(node,end=" ")
             visited.add(node)
-            for nei in self.items[node]:
-                visited.add(nei)
-                stack.append(nei)
+            for nei in reversed(self.items[node]): # for nei in self.items[node]
+                if nei not in visited:
+                    visited.add(nei)
+                    stack.append(nei)
 d = Dfs()
+d.add_edge(1,2)
+d.add_edge(1,3)
+d.add_edge(2,4)
+d.add_edge(2,5)
+print(d.dfs(1))
 
