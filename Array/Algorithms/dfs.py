@@ -6,7 +6,5 @@ class Dfs:
             self.items[u] = []
         if v not in self.items:
             self.items[v] = []
-
         self.items[u].append[v]
         self.items[v].append[u]
-        
