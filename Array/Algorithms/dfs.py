@@ -13,12 +13,12 @@ class Dfs:
         stack = [start]
         while stack:
             node = stack.pop()
-            print(node,end=" ")
-            visited.add(node)
-            for nei in reversed(self.items[node]): # for nei in self.items[node]
-                if nei not in visited:
-                    visited.add(nei)
-                    stack.append(nei)
+            if node not in visited:
+                print(node,end=" ")
+                visited.add(node)
+                for nei in reversed(self.items[node]): # for nei in self.items[node]
+                    if nei not in visited:
+                        stack.append(nei)
 d = Dfs()
 d.add_edge(1,2)
 d.add_edge(1,3)
