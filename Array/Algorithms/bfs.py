@@ -19,6 +19,7 @@ class BFS:
                 for nei in self.graph[node]:
                     if nei not in visited:
                             queue.append(nei)
+                            
 # Driver Code
 d = BFS()
 d.add_edge(1,2)
