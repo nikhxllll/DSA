@@ -19,7 +19,6 @@ class Dfs:
                 for nei in reversed(self.items[node]): # for nei in self.items[node]
                     if nei not in visited:
                         stack.append(nei)
-                        
 # Driver Code
 d = Dfs()
 d.add_edge(1,2)
