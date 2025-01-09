@@ -5,7 +5,7 @@ def sel_sort(nums):
             if nums[j] < nums[min]:
                 min = j
         nums[i],nums[min] = nums[min],nums[i]
-
+# driver code
 l1 = [24,12,43,42,34354,542]
 sel_sort(l1)
 print(l1)
