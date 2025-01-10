@@ -12,5 +12,4 @@ class Heap:
         pass
     def listprint(self):
         pass
-
 # driver code
