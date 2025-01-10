@@ -10,4 +10,6 @@ class Heap:
         pass
     def deletee(self):
         pass
+    def listprint(self):
+        pass
 
