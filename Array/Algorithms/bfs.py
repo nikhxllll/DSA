@@ -20,7 +20,6 @@ class BFS:
                     if nei not in visited:
                             queue.append(nei)                      
 # Driver Code
-
 d = BFS()
 d.add_edge(1,2)
 d.add_edge(1,3)
