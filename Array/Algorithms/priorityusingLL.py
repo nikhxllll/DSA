@@ -30,7 +30,7 @@ class PriorityQueue:
         return data
     def size(self):
         return self.item_count
-# driver cod
+# driver code
 q = PriorityQueue()
 q.push("Ny",10)
 q.push("Jy",20)
