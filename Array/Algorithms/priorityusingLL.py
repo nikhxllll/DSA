@@ -38,7 +38,6 @@ q.push("Sy",30)
 q.push("Ky",40)
 print(q.size())
 while not q.is_empty():
-    
     print(q.pop())
     print("Deleted:",q.size())
 print(q.size())
