@@ -16,7 +16,7 @@ class PriorityyQueue:
             return self.items.pop(0)[0]   
     def size(self):
         return self.item_count()
-    # driver Code
+# driver Cod
 p=PriorityyQueue()
 p.push("Nikhil",10)
 p.push("Saif",20)
