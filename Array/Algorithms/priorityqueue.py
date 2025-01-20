@@ -22,7 +22,6 @@ p.push("Nikhil",10)
 p.push("Saif",20)
 p.push("Raja",30)
 p.push("Rahul",30)
-
 while not p.is_empty():
     print(p.pop())
 
