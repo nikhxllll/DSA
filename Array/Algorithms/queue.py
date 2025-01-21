@@ -20,7 +20,6 @@ class Queue:
             return self.items[-1]
     def size(self):
         return len(self.items)
-    
 # Driver code
 q1 = Queue()
 q1.enqueue(10)
