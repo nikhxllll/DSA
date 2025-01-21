@@ -10,7 +10,7 @@ class Queue:
     def dequeue(self):
         if not self.is_empty():
             return self.items.pop(0)
-        else:
+        else
             raise IndexError('Stack is empty')
     def front(self):
         if not self.is_empty():
