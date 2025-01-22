@@ -10,7 +10,7 @@ class Solution:
                 digits[i] += 1
                 return digits
             i -=1
-        return [1]+digit
+        return [1]+digits
 
 
 
