@@ -1,4 +1,3 @@
-
 #Easy way to handle this 
 class Solution:
     def plusOne(self, digits: List[int]) -> List[int]:
