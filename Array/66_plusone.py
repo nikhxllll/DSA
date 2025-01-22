@@ -12,7 +12,6 @@ class Solution:
         return [1]+digits
 
 
-
 class Solution:
     def plusOne(self, digits: List[int]) -> List[int]:
 
