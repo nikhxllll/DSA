@@ -10,5 +10,4 @@ class Solution:
 
 
 
-
 #two pointers approach
