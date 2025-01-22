@@ -8,5 +8,4 @@ class Solution:
                 l +=1
         return l
 
-
 #two pointers approach
