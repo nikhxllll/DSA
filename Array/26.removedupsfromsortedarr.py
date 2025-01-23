@@ -6,5 +6,4 @@ class Solution:
                 nums[l]=nums[r]
                 l +=1
         return l
-
 #two pointers approach
